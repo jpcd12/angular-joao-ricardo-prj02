@@ -12,12 +12,9 @@ export class GithubComponent implements OnInit {
 
   githubRicardo
 
-  ativar: number;
-
   constructor (private github: GithubService) { }
 
   ngOnInit() {
-    this.ativar = 1;
     this.githubJoao = this.github.getRepositoryJoao();
     this.githubRicardo = this.github.getRepositoryRicardo();
   }

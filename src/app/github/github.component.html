@@ -1,35 +1,27 @@
 <h2>Repositórios do Github</h2>
 <br>
-<h3 (click)="ativar = 1">João Pedro</h3>
+<h3>João Pedro</h3>
 <br>
-
-<span *ngIf="ativar == 1">
 <table border="1">
     <tr>
       <th>Nome do Repositório</th>
       <th>Link</th>
-
     </tr> 
     <tr *ngFor='let repos of githubJoao | async'>
       <td>{{repos.name}}</td>
       <td><a href="{{repos.html_url}}" target="_blank">Repositorio</a></td>
     </tr>
   </table>
-</span>
 <br>
 <h3>Ricardo</h3>
 <br>
-
-<span *ngIf="ativar == 1">
 <table border="1">
     <tr>
       <th>Nome do Repositório</th>
       <th>Link</th>
-
     </tr> 
     <tr *ngFor='let repos of githubRicardo | async'>
       <td>{{repos.name}}</td>
       <td><a href="{{repos.html_url}}" target="_blank">Repositorio</a></td>
     </tr>
   </table>
-</span>
